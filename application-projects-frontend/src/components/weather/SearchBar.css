@@ -1,0 +1,50 @@
+/*Style the div element with id 'searchBar' thats a direct child of the div element with class name 'row'*/
+div.row > div#searchBar {
+	display: flex;
+	justify-content: center;
+}
+
+/*Style the input elements how they appear to the user on screen*/
+div#searchBar input {
+	width: 100%;
+    height: auto;
+    border: 1 solid white;
+    border-style: dotted;
+    text-shadow: 15px 30px 35px white;
+    border-radius: 16px;
+    padding: 4px;
+    margin: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background: black;
+    color: white;
+    font-family: monospace;
+    font-size: 28px;
+    mix-blend-mode: screen;
+}
+
+button#search {
+    width: auto;
+    background: linear-gradient(black, lightgrey, grey, black);
+    -webkit-background-clip: text;
+    background-clip: text;
+    fill-color: transparent;
+    border: 1 solid white;
+    border-style: dotted;
+    text-shadow: 15px 30px 35px white;
+    border-radius: 16px;
+    padding: 4px 5%;
+    margin: 2px 15px;
+    color: white;
+    font-family: monospace;
+    font-size: 28px;
+    mix-blend-mode: screen;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+button#search:hover, button#search:focus {
+    background: rbga(100, 100, 225, 1);
+    text-decoration: underline;
+    mix-blend-mode: none;
+}

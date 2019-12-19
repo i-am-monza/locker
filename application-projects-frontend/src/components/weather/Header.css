@@ -1,0 +1,18 @@
+/*Style the div element with class name 'col-sm-12' thats a direct child of the div element with class name 'row'*/
+div.row > div.col-sm-12 {
+	display: flex;
+	justify-content: center;
+	background: transparent;
+	color: inherit;
+}
+
+/*Style the h1 element thats a direct child of the div element with class name 'col-sm-12'*/
+div.col-sm-12 > h1 {
+	font-family: Serif;
+	font-size: 32px;
+	padding: 5% 15%;
+	border: 1 solid black;
+	border-style: double;
+	border-radius: 60px;
+	/*animation: resize 1s linear infinite;*/
+}

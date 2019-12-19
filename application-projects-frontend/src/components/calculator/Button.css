@@ -1,0 +1,28 @@
+/*Style the button elements*/
+button#input-btn {
+    background: lavender;
+    color: rgba(0, 0, 0, 0.7);
+    marging: 4px;
+    font-family: Times;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    font-weight: 200;
+    border: 0.05em solid black;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    mix-blend-mode: multiply;
+}
+
+button#input-btn:hover {
+    color: rgba(0, 0, 0, 1);
+    text-decoration: underline;
+    transform: scale(1.1);
+    font-size: 26px;
+    font-weight: 400;
+}
+
+

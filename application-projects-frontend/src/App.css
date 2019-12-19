@@ -1,0 +1,128 @@
+/*General style for the parent component*/
+.App {
+    margin: 5% 10%;
+    height: calc(800px + 100%);
+    background-image: conic-gradient(#bbb 0.09turn, #0b1c2b 0.27turn, #2a2b1df0 0.27turn, #666 0.54turn, #a3e5ff 1.54turn);;
+    color: cornflowerblue;
+    border: 20px double whitesmoke;
+    box-shadow: 10px 10px 40px 40px darkgrey;
+    mix-blend-mode: overlay;
+}
+
+
+/*Style the parent footer element*/
+div.footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: solid whitesmoke;
+    border-width: 0.2em 0 0 0;
+    border-radius: 10%;
+    bottom: 0;
+    margin-top: 5%;
+}
+
+/*Style the footer element*/
+footer {
+    display: flex;
+    margin: 1% 5%;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: 20px;
+    width: 100%;
+}
+
+/*Style paragraphs of the footer element*/
+footer p {
+    font-family: san-sarif;
+    font-weight: 200;
+    font-size: 22px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+footer div#link {
+    height: 12%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+footer div#cv {
+    width: 45%;
+    justify-content: center;
+}
+
+button#requestCv {
+    border-radius: 5px;
+    width: max-content;
+    height: auto;
+    background: #007bff;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    padding: 2px auto;
+    margin: 0 35%;
+    font-size: x-large;
+    transition: all 0.5s ease-in-out 0.1s;
+}
+
+button#requestCv:hover {
+    text-decoration: underline;
+}
+
+div.viewCV {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: calc(50px + 100%);
+    margin: 10% 15%;
+    box-shadow: 0 0 55px 10px whitesmoke;
+    z-index: 2;
+}
+
+div.viewCV iframe, div#cv {
+    height: 100%;
+}
+
+div#cv p:hover:nth-child(1), p:hover:nth-child(2) {
+    text-shadow: 0 1px 1px #007bff;
+    text-decoration: underline;
+}
+
+div#external {
+    width: 100%;
+    height: 100%;
+    float: right;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-columns: minmax(50px, auto);
+    grid-auto-rows: minmax(50px, auto);
+    grid-gap: 10px;
+}
+
+div#external a {
+    display: flex;
+    width: inherit;
+    height: 50px;
+    font-family: 'Roboto';
+    font-size: x-large;
+    color: whitesmoke;
+    background: transparent;
+    mix-blend-mode: color-dodge;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out 0.1s;
+}
+
+div#external a:hover {
+    backgound: rgba(0, 100, 200, 0.5);
+    transform: scale(1.4);
+    color: #007bff;
+}

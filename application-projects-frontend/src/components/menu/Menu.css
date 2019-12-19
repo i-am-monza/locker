@@ -1,0 +1,46 @@
+/*Style the element with class name navbar*/
+.navbar {
+	display: flex; 
+	justify-content: center; 
+	font-family: cursive;
+	font-size: large;
+	margin: 1% 5%; 
+	padding: 0% auto;
+	background-color: lavender;
+}
+
+.navbar ul {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+}
+
+/*Style the li elements nested within the ul element*/
+.navbar ul li {
+	display: inline; 
+	list-style: none; 
+	justify-content: space-around;
+}
+/*Specifically style li elements regardles if they are children of other elements or not*/
+.navbar li {
+	margin-right: 4px; 
+	margin-left: 4px;
+	border: 0.05em solid black;
+	text-shadow: 0px 0px 5px 5px;
+	border-width: 0 0.05em 0 0.05em;
+	padding: 0px 5px;
+	transition: all 0.5s ease-in-out 0.1s;
+}
+
+.navbar li:hover {
+	background: whitesmoke;
+	border-radius: 20%;
+	box-shadow: 0px 0px 10px 10px whitesmoke;
+	text-decoration: underline;
+	transform: scale(1.2);
+}
+
+.navbar a{
+	text-decoration: none;
+}

@@ -1,0 +1,189 @@
+/*Style the parent component of the application*/
+.itunes {
+    text-align: center;
+    margin: 1% 10% auto 10%;
+    height: auto;
+    background-imege: linear-gradient(whitesmoke, lightgrey);
+    box-shadow: 0px 0px 5px 5px whitesmoke;
+}
+
+div.body {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-columns: minmax(100px, auto);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 5%;
+    height: 100%;
+}
+/*Style the h1 elements of the application*/
+div.header h1 {
+    text-align: center;
+    font-family: monospace;
+    color: whitesmoke;
+    font-size: 72px;
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
+div#display {
+    display: block;
+    float: left;
+    width: 100%;
+    border: 0.4em solid whitesmoke;
+    border-width: 0.4em 0 0 0.4em;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+div#favourites {
+    display: block;
+    float: right;
+    width: 100%;
+    border: 0.4em solid whitesmoke;
+    border-width: 0.4em 0 0 0.4em;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/*Style h1 elements that belong to specific elements*/
+div#display h1,
+div#favourites h1 {
+    justify-content: center;
+    align-content: stretch;
+    text-align: center;
+    font-family: monospace;
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+div.Search {
+    display: flex;
+    justify-content: center;
+}
+
+label#searchBar {
+    width: 800px;
+    padding: 0 0 20px 0;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+}
+
+input#searchInput {
+    width: 200px;
+    height: 25px;
+    padding: 0 10px;
+    border: .08em solid black;
+    border-radius: 10px;
+    border-width: .08em 0;
+}
+
+select#media {
+    border-radius: 5px;
+    width: 100px;
+    height: 25px;
+    align-self: center;
+    cursor: pointer;
+}
+
+button#searchButton {
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+    background: #007bff;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    padding: 2px auto;
+    margin: 0;
+    font-size: x-large;
+    transition: all 0.5s ease-in-out 0.1s;
+}
+
+button#searchButton:hover {
+    text-decoration: underline;
+}
+
+.itunes td button {
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+    background: #000    ;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    padding: 2px 15%;
+    margin: 10px auto;
+    font-size: 30px;
+    transition: all 0.5s ease-in-out 0.1s;
+}
+
+.itunes td button:hover {
+    color: #000;
+    background: whitesmoke;
+}
+
+.itunes table {
+    width: 100%;
+}
+
+/*Float the audio file in the right position*/
+.itunes audio {
+    float: right;
+    width: 200px;
+}
+
+.itunes video {
+    float: right;
+    width: 200px;
+}
+
+.itunes td {
+    
+    width: 200px;
+}
+
+/*General table row style*/
+.itunes tr {
+    border: solid #007bff;
+    border-width: 0 0 0.2em 0;
+    width: 200px;
+}
+
+/*Style odd position tr tags*/
+.itunes tr:nth-child(odd) {
+    background: linear-gradient(45deg, rgba(40, 40, 40, 0.7), rgba(240, 240, 240, 0.7), rgba(255, 255, 255, 0.7));
+}
+
+/*Style even position tr tags*/
+.itunes tr:nth-child(even) {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(240, 240, 240, 0.7), rgba(40, 40, 40, 0.7));
+}
+
+/*Style the h5 elements and anchor elements within it*/
+.itunes h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: medium;
+}
+
+.itunes h5 a {
+    padding: 2px;
+    color: whitesmoke;
+    mix-blend-mode: overlay;
+}
+
+/*Style the apple icon image*/
+img#appleIcon {
+    width: 50px;
+    height: 50px;
+    border: solid transparent;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out 0.1s;
+}
+
+img#appleIcon:hover {
+    box-shadow: 0 0 1px 1px #007bff;
+}

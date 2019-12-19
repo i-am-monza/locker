@@ -1,0 +1,5 @@
+/*Style the element with class name Buttons*/
+.Buttons {
+	display: flex; 
+	justify-content: center;
+}

@@ -1,0 +1,100 @@
+/*Style the div element with id name 'stage' to basically grid its children just in 1 column. Center justify the children as well*/
+div#stage {
+    height: 610px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5px;
+    justify-content: center;
+    margin: 10px;
+    padding: 5px;
+    width: 500px;
+}
+
+/*Undline taxt wrapped arround this tag and have a font size of 42px*/
+u {
+	font-style: italic;
+	font-size: 42px;
+	color: black;
+}
+
+/*Style the 'Search' button how it appears and behaves*/
+button {
+	width: 350px;
+	background: linear-gradient(black, lightgrey, grey, black);
+	background-clip: text;
+	fill-color: transparent;
+	border: 1 solid white;
+	border-style: dotted;
+	text-shadow: 15px 30px 35px white;
+	border-radius: 16px;
+	padding: 4px;
+	margin: 5px;
+	margin-left: 15px;
+	margin-right: 15px;
+	color: white;
+	font-family: monospace;
+	font-size: 28px;
+	mix-blend-mode: screen;
+	cursor: pointer;
+}
+
+/*Style the article element with id 'base'*/
+article#base {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 15px;
+}
+
+/*Style the div children of the article element with id 'base'*/
+article#base div {
+	display: flex;
+	justify-content: center;
+}
+
+/*Style the article element with id 'additional'*/
+article#additional {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-gap: 15px;
+}
+
+/*Style the div element with id 'temp-range' and div element with id 'wind*/
+div#temp-range, div#wind {
+	display: flex;
+	justify-content: center;
+}
+
+/*Style the h1 child of the div element with id 'temp-range'*/
+div#temp-range h1 {
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+/*Style the he (line) element*/
+hr {
+	height: 5px;
+	color: red;
+	background: black;
+	width: -webkit-fill-available;
+}
+
+/*Style all h1 elements in general*/
+h1 {
+	text-align: center;
+	font-family: monospace;
+	font-weight: 100;
+	font-size: 24px;
+}
+
+/*Style the text wrapped in the italic tag*/
+i {
+	font-size: 32px;
+}
+
+/*Style the image elements*/
+img {
+	width: 150px;
+	height: 150px;
+	top: 0;
+	bottom: 0;
+}

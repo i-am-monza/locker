@@ -1,0 +1,14 @@
+/*Style the element with class name Display*/
+.display {
+	display: flex;
+	font-family: Times;
+	font-size: large;
+	justify-content: flex-end;
+	padding: 0px 10px;
+	margin: 2%;
+	margin-bottom: 5%;
+	border: double black;
+	border-radius: 5px;
+	height: 5vh;
+	align-items: center;
+}

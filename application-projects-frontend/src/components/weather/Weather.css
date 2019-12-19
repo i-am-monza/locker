@@ -1,0 +1,12 @@
+/*Style the .App component to have a background as it acts as the landing page*/
+div.Weather {
+	background-image: url(/static/media/evening.1e7c7579.png), linear-gradient(90deg, black, transparent, lightgrey, transparent, darkgrey);
+    background-size: 100%;
+    height: 600px;
+    width: 60%;
+    margin: 0% 20%;
+    border: none;
+    border-radius: 50px;
+    color: black;
+    background-blend-mode: overlay;
+}

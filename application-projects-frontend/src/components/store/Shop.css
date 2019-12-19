@@ -1,0 +1,240 @@
+/*Style the div element with class name products*/
+div.shop {
+    display: block;
+    justify-content: center;
+}
+
+div#products {
+    display: flex;
+    justify-content: center;
+}
+
+/*Style the render stage of the store*/
+div#stageDescription {
+    display: flex;
+    justify-content: center;
+    margin: 2% 5%;
+    box-shadow: 0px 0px 5px 5px whitesmoke;
+}
+
+/*Style the elements that displays the users products*/
+div.products {
+    display: flex;
+    justify-content: flex-start;
+    align-content: strech;
+    color: whitesmoke;
+    background: inherit;
+    mix-blend-mode: screen;
+    width: 100%;
+}
+
+/*Style the elements that outputs product information*/
+div#info {
+    width: 50%;
+    margin: 2%;
+    padding: 2%;
+    border: solid whitesmoke;
+    border-width: 0 0.05em 0 0;
+}
+
+div#trackList {
+    width: 50%;
+    margin: 2%;
+    padding: 2%;
+    border: solid whitesmoke;
+    border-width: 0 0 0 0.05em;
+}
+
+/*Style all article elements*/
+article.item {
+    box-shadow: 0px 0px 5px 5px whitesmoke;
+    margin: 10px;
+}
+
+/*Style text rendering elememnt*/
+div.shop h1, h2, h3 label {
+    color: whitesmoke;
+    background: inherit;
+    mix-blend-mode: screen;
+    text-align: center;
+    justify-content: center;
+    font-family: Times;
+}
+
+div.shop article.vacation {
+    width: 100%;
+    height: auto;
+}
+
+div.shop article.vacation img {
+    width: inherit;
+    height: 275px;
+}
+
+div.shop article.how_to_rob {
+    width: 100%;
+    height: auto;
+}
+
+div.shop article.how_to_rob img {
+    width: inherit;
+    height: 275px;
+}
+
+div.shop article.zoo {
+    width: 100%;
+    height: 100%;
+}
+
+div.shop article.zoo img {
+    width: inherit;
+    height: 275px;
+}
+
+div.shop article.item img {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out 0.1s;
+}
+
+
+/*Add the pointer property on images and buttons*/
+div.shop 
+div.shop img:hover {
+    opacity: 0.6;
+    border-radius: 20%;
+}
+
+div.shop select {
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+    border-radius: 20px;
+}
+
+div.shop button {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out 0.1s;
+}
+
+
+div.shop button:hover {
+    background: darkgreen;
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+/*Style the action buttons on the shop component*/
+div#controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    grid-auto-columns: minmax(auto, auto);
+    grid-auto-rows: minmax(auto, 30px);
+    justify-content: center;
+    grid-gap: 5px;
+    justify-content: space-around;
+    padding: 0 5%;
+    width: auto;
+}
+
+/*Place these elements in specific positions within the grid-system*/
+label#forLogin {
+    display: inline-flex;
+    justify-content: space-between;
+    color: whitesmoke;
+    border: .09em solid grey;
+    border-radius: 5px;
+    grid-column: 3;
+    grid-row: 1;
+    padding: 0px 4px;
+    width: 96%; 
+}
+
+input#login {
+	border: .09em solid grey;
+    border-radius: 5px;
+    padding: 0 2px;
+    width: 40%;
+    font-size: large;
+    margin: 0 10px;
+    transition: all 0.5s ease-in-out 0.1s;
+}
+
+input#login:active {
+    background: lightgrey;
+    color: whitesmoke;
+}
+
+button#loginBtn {
+    padding: 0 2px;
+    font-size: x-large;
+    width: auto;
+    height: auto;
+    margin: 0;
+    transition: all 0.5s ease-in-out 0.1s;
+}
+
+label#forTotal {
+    text-align: center;
+    align-self: center;
+    color: whitesmoke;
+    border: .09em solid grey;
+    border-radius: 5px;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+button#showCart {
+    border-radius: 5px;
+    grid-column: 1;
+    grid-row: 1;
+    width: auto;
+    height: auto;
+    padding: 0 2px;
+    align-self: center;
+    text-align: center;
+    font-size: x-large;
+    transition: all 0.5s ease-in-out 0.1s;
+}
+
+button#checkout {
+    border-radius: 5px;
+    grid-column: 4;
+    grid-row: 1;
+    width: auto;
+    align-self: center;
+    height: auto;
+    padding: 0 2px;
+    font-size: x-large;
+    transition: all 0.5s ease-in-out 0.1s;
+}
+
+div.request {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 20px;
+}
+
+div#requestDetails {
+	grid-column: 1;
+	grid-row: 1;
+    justify-content: center;
+    display: grid;
+}
+
+div.shop label {
+    color: whitesmoke;
+}
+
+button#deliver {
+	grid-column: 1;
+	grid-row: 2;
+    width: auto;
+    transition: all 0.5s ease-in-out 0.1s;
+}
+
+div#productAction {
+    display: flex;
+    justify-content: space-between;
+}

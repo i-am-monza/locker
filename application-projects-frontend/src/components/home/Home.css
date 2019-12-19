@@ -1,0 +1,51 @@
+/*Style the home page component*/
+div#home {
+	display: grid;
+	grid-template-columns: repeat(1, 300px);
+	text-align: center;
+	grid-gap: 5%;
+}
+
+/*Style the calculator image elements*/
+article#calculator {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+img#calculatorImage {
+    width: 70%;
+    height: 100%;
+	transition: all 0.5s ease-in-out;
+}
+
+/*Style the store image elements*/
+article#store {
+	grid-column: 2;
+	grid-row: 1;
+}
+
+img#storeImage {
+	width: 90%;
+    height: 100%;
+	transition: all 0.5s ease-in-out;
+}
+
+/*Style the search image elements*/
+article#search {
+	grid-column: 1/3;
+    grid-row: 2;
+    margin-bottom: 5%;
+}
+
+img#searchImage {
+    width: 100%;
+    height: 100%;
+	transition: all 0.5s ease-in-out;
+	
+}
+
+div#home img:hover {
+	border-radius: 10px;
+	cursor: pointer;
+	box-shadow: 0 0 10px 5px whitesmoke;
+}
